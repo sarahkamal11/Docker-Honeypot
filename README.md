@@ -18,7 +18,7 @@ Test Locally:
 `ssh root@localhost -p 2222`  
 
 **Example Output**  
-`2024-01-15T10:30:00+0000 [HoneyPotSSHTransport] login attempt [b'root'/b'12345'] succeeded
-2024-01-15T10:30:05+0000 [HoneyPotSSHTransport] CMD: whoami
-2024-01-15T10:30:08+0000 [HoneyPotSSHTransport] CMD: uname -a
-2024-01-15T10:30:12+0000 [HoneyPotSSHTransport] Downloaded http://malicious.com/script.sh`
+`2024-01-15T10:30:00+0000 [HoneyPotSSHTransport] login attempt [b'root'/b'12345'] succeeded`    
+`2024-01-15T10:30:05+0000 [HoneyPotSSHTransport] CMD: whoami`  
+`2024-01-15T10:30:08+0000 [HoneyPotSSHTransport] CMD: uname -a`  
+`2024-01-15T10:30:12+0000 [HoneyPotSSHTransport] Downloaded http://malicious.com/script.sh`  
