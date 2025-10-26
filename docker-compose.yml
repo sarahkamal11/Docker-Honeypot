@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  cowrie:
+    image: cowrie/cowrie:latest
+    container_name: cowrie_honeypot
+    ports:
+      - "2222:2222"
+      - "2223:2223"
+    volumes:
+      # Persist logs and the stateful data (like downloaded malware) outside the container.
+      - ./cowrie/var/log/cowrie:/cowrie/var/log/cowrie
+      - ./cowrie/var/lib/cowrie:/cowrie/var/lib/cowrie
+    restart: unless-stopped
